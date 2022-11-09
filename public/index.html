@@ -14,52 +14,63 @@
 </head>
 
 <body class="font-poppins">
-    <div class="group bg-slate-300 w-[50%] mx-auto p-10 rounded-xl mt-10">
-        <h1 class="text-2xl text-center font-bold group-hover:text-slate-700 font-press-start">
-            Halo Majid!
-        </h1>
-    </div>
-    <div class="columns-sm mx-auto w-full bg-slate-700 space-y-4 mt-4">
-        <button class="btn-primary mt-2">Submit here</button>
-        <button class="btn-primary animate-bounce hover:animate-none">Submit here</button>
-    </div>
-    <div class="bg-indigo-500 w-[100%] mx-auto text-center">
-        <span class="text-red-300 text-5xl">Halow</span>
-        <span class="text-white text-5xl">Halow</span>
-    </div>
-    <h1
-        class="font-bold text-center mt-10 text-6xl bg-gradient-to-r from-blue-700 to-teal-400 bg-clip-text text-transparent hover:animate-goyang animate-fast-pulse">
-        TailwindCSS❤</h1>
 
-    <div
-        class="w-3/4 mx-auto mt-10 p-5 border border-slate-200 shadow-md rounded-lg dark:bg-slate-700 transition-all ease-in-out">
+    <!-- coretan belajar -->
+    <div class="w-full bg-blue-600 hover:bg-blue-500 transition duration-300 ease-in-out text-slate-50 text-sm text-center py-1 px-2 flex relative group" id="info">
+        <span class="m-auto cursor-pointer animate-goyang group-hover:animate-none" id="show-coretan">Klik untuk lihat coretan awal belajar</span>
+        <span class="text-sm text-slate-50 cursor-pointer absolute right-[8px]" id="close">❌</span>
+    </div>
+    <div class="container overflow-hidden transition-all duration-300 ease-in-out mx-auto h-0" id="coretan">
+        
+        <div class="group bg-slate-300 w-[50%] mx-auto p-10 rounded-xl mt-10">
+            <h1 class="text-2xl text-center font-bold group-hover:text-slate-700 font-press-start">
+                Halo Majid!
+            </h1>
+        </div>
+        <div class="columns-sm mx-auto w-full bg-slate-700 space-y-4 mt-4">
+            <button class="btn-primary mt-2">Submit here</button>
+            <button class="btn-primary animate-bounce hover:animate-none">Submit here</button>
+        </div>
+        <div class="bg-indigo-500 w-[100%] mx-auto text-center">
+            <span class="text-red-300 text-5xl">Halow</span>
+            <span class="text-white text-5xl">Halow</span>
+        </div>
+        <h1
+            class="font-bold text-center mt-10 text-6xl bg-gradient-to-r from-blue-700 to-teal-400 bg-clip-text text-transparent hover:animate-goyang animate-fast-pulse">
+            TailwindCSS❤</h1>
 
-        <!-- Fitur Toggle Dark Mode -->
-        <div class="flex mx-auto font-sans text-sm font-medium justify-center items-center gap-2 md:justify-end">
-            <p class="dark:text-slate-100">light</p>
-            <input type="checkbox" id="toggle" class="hidden">
-            <label for="toggle">
-                <div class="w-9 h-5 bg-slate-300 rounded-full p-0.5 flex items-center cursor-pointer">
-                    <div class="w-4 h-4 bg-slate-100 rounded-full toggle-circle transition-all ease-in-out"></div>
-                </div>
-            </label>
-            <p class="dark:text-slate-100">dark</p>
+        <div class="w-3/4 mx-auto mt-10 p-5 border border-slate-200 shadow-md rounded-lg dark:bg-slate-700 transition-all ease-in-out">
+
+            <!-- Fitur Toggle Dark Mode -->
+            <div class="flex mx-auto font-sans text-sm font-medium justify-center items-center gap-2 md:justify-end">
+                <p class="dark:text-slate-100">light</p>
+                <input type="checkbox" id="toggle" class="hidden">
+                <label for="toggle">
+                    <div class="w-9 h-5 bg-slate-300 rounded-full p-0.5 flex items-center cursor-pointer">
+                        <div class="w-4 h-4 bg-slate-100 rounded-full toggle-circle transition-all ease-in-out"></div>
+                    </div>
+                </label>
+                <p class="dark:text-slate-100">dark</p>
+            </div>
+
+            <!-- form input email -->
+            <form action="">
+                <label for="email">
+                    <span
+                        class="text-slate-600 block mb-1 after:content-['*'] after:text-pink-500 after:text-sm dark:text-slate-100 transition-all ease-in-out">Email</span>
+                    <input type="email" id="email" placeholder="Masukan email Anda..."
+                        class="w-full block placeholder:text-slate-300 placeholder:font-medium placeholder:text-sm px-3 py-2 border dark:border-slate-300 rounded-md shadow-sm focus:outline-none focus:ring-4 focus:ring-sky-500 invalid:focus:ring-pink-500 invalid:text-pink-500 peer dark:bg-slate-300 dark:text-slate-700 placeholder:dark:text-slate-400 dark:invalid:text-pink-500 transition-all ease-in-out">
+                    <span class="text-sm font-sans font-semibold text-pink-500 invisible peer-invalid:visible">
+                        Email yang Anda masukan tidak valid!</span>
+                </label>
+            </form>
         </div>
 
-        <!-- form input email -->
-        <form action="">
-            <label for="email">
-                <span
-                    class="text-slate-600 block mb-1 after:content-['*'] after:text-pink-500 after:text-sm dark:text-slate-100 transition-all ease-in-out">Email</span>
-                <input type="email" id="email" placeholder="Masukan email Anda..."
-                    class="w-full block placeholder:text-slate-300 placeholder:font-medium placeholder:text-sm px-3 py-2 border dark:border-slate-300 rounded-md shadow-sm focus:outline-none focus:ring-4 focus:ring-sky-500 invalid:focus:ring-pink-500 invalid:text-pink-500 peer dark:bg-slate-300 dark:text-slate-700 placeholder:dark:text-slate-400 dark:invalid:text-pink-500 transition-all ease-in-out">
-                <span class="text-sm font-sans font-semibold text-pink-500 invisible peer-invalid:visible">
-                    Email yang Anda masukan tidak valid!</span>
-            </label>
-        </form>
+        <div class="mt-[200px]">ayayyaya</div>
     </div>
+    <!-- Akhir Coretan -->
 
-    <div class="mt-[200px]"></div>
+
 
     <script>
         // Script untuk switch dark/light
@@ -70,6 +81,24 @@
             checkbox.checked ? html.classList.add('dark') : html.classList.remove('dark');
         });
     </script>
+
+    <script>
+        // Script untuk show coretan belajar
+        const showCoretan = document.querySelector('#show-coretan');
+        const closeCoretan = document.querySelector('#close');
+        const coretan = document.querySelector('#coretan');
+        const info = document.querySelector('#info');
+
+        showCoretan.addEventListener('click', function () {
+            coretan.classList.toggle('h-0');
+        });
+
+        closeCoretan.addEventListener('click', function () {
+            info.classList.add('hidden');
+            coretan.classList.add('hidden');
+        });
+    </script>
+
 </body>
 
 </html>
