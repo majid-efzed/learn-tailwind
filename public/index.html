@@ -16,12 +16,21 @@
 <body class="font-poppins">
 
     <!-- coretan belajar -->
-    <div class="w-full bg-blue-600 hover:bg-blue-500 transition duration-300 ease-in-out text-slate-50 text-sm text-center py-1 px-2 flex relative group" id="info">
-        <span class="m-auto cursor-pointer animate-goyang group-hover:animate-none" id="show-coretan">Klik untuk lihat coretan awal belajar</span>
-        <span class="text-sm text-slate-50 cursor-pointer absolute right-[8px]" id="close">❌</span>
+    <div class="w-full bg-blue-600 hover:bg-blue-500 transition duration-300 ease-in-out text-slate-50 text-sm text-center py-1 px-2 flex relative group"
+        id="info">
+        <span class="m-auto cursor-pointer group-hover:animate-goyang" id="show-coretan">Klik untuk lihat
+            coretan awal belajar</span>
+        <span class="text-sm cursor-pointer absolute right-[8px] top-[6px]" id="close">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-x-circle-fill" viewBox="0 0 16 16">
+                <path
+                    d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293 5.354 4.646z" />
+            </svg>
+        </span>
     </div>
-    <div class="container overflow-hidden transition-all duration-300 ease-in-out mx-auto h-0" id="coretan">
-        
+
+    <div class="coretan" id="coretan">
+
         <div class="group bg-slate-300 w-[50%] mx-auto p-10 rounded-xl mt-10">
             <h1 class="text-2xl text-center font-bold group-hover:text-slate-700 font-press-start">
                 Halo Majid!
@@ -39,7 +48,8 @@
             class="font-bold text-center mt-10 text-6xl bg-gradient-to-r from-blue-700 to-teal-400 bg-clip-text text-transparent hover:animate-goyang animate-fast-pulse">
             TailwindCSS❤</h1>
 
-        <div class="w-3/4 mx-auto mt-10 p-5 border border-slate-200 shadow-md rounded-lg dark:bg-slate-700 transition-all ease-in-out">
+        <div
+            class="w-3/4 mx-auto mt-10 p-5 border border-slate-200 shadow-md rounded-lg dark:bg-slate-700 transition-all ease-in-out">
 
             <!-- Fitur Toggle Dark Mode -->
             <div class="flex mx-auto font-sans text-sm font-medium justify-center items-center gap-2 md:justify-end">
@@ -66,9 +76,30 @@
             </form>
         </div>
 
-        <div class="mt-[200px]">ayayyaya</div>
+        <div class="mt-[100px]"></div>
     </div>
     <!-- Akhir Coretan -->
+
+    <!-- Portfolio -->
+
+    <!-- Start Navbar -->
+    <section id="navbar">
+        <div class="container">
+            <nav class="flex justify-between items-center py-4 px-6">
+                <span class="font-bold text-teal-600">Majid Efzed</span>
+                <span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-menu-button-wide-fill" viewBox="0 0 16 16">
+                        <path
+                            d="M1.5 0A1.5 1.5 0 0 0 0 1.5v2A1.5 1.5 0 0 0 1.5 5h13A1.5 1.5 0 0 0 16 3.5v-2A1.5 1.5 0 0 0 14.5 0h-13zm1 2h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1 0-1zm9.927.427A.25.25 0 0 1 12.604 2h.792a.25.25 0 0 1 .177.427l-.396.396a.25.25 0 0 1-.354 0l-.396-.396zM0 8a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V8zm1 3v2a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2H1zm14-1V8a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2h14zM2 8.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0 4a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5z" />
+                    </svg>
+                </span>
+            </nav>
+        </div>
+    </section>
+    <!-- End Navbar -->
+
+    <!-- end Portfolio -->
 
 
 
@@ -90,7 +121,7 @@
         const info = document.querySelector('#info');
 
         showCoretan.addEventListener('click', function () {
-            coretan.classList.toggle('h-0');
+            coretan.classList.toggle('coretan-show');
         });
 
         closeCoretan.addEventListener('click', function () {

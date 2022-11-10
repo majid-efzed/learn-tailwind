@@ -10,4 +10,14 @@
     #toggle:checked ~ label div.toggle-circle {
         @apply translate-x-4
     }
+
+    .coretan {
+        @apply container overflow-hidden transition-all duration-1000 ease-in-out mx-auto max-h-0 shadow-sm shadow-slate-400
+    }
+}
+
+@layer utilities {
+    .coretan-show {
+    @apply max-h-[900px]
+    }
 }
