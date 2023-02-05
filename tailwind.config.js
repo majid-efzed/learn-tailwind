@@ -22,7 +22,8 @@ module.exports = {
         },
       },
       colors: {
-        primary: '#14b8a6'
+        primary: '#14b8a6',
+        reading: '#64748b',
       },
       screens: {
         '2xl': '1320px'
