@@ -2,10 +2,14 @@
 module.exports = {
   content: ['./public/**/*.{html,js}'],
   theme: {
+    container: {
+      center: true,
+    },
     extend: {
       fontFamily: {
         'press-start': ['"Press Start 2P"', 'cursive'],
         'poppins': ['Poppins', 'sans-serif'],
+        'kufi': ['"Reem Kufi"', 'cursive'],
       },
       animation: {
         'goyang': 'goyang 1s ease-in-out infinite',
@@ -16,6 +20,12 @@ module.exports = {
           '0%, 100%': { transform: 'rotate(-1deg)' },
           '50%': { transform: 'rotate(1deg)' },
         },
+      },
+      colors: {
+        primary: '#14b8a6'
+      },
+      screens: {
+        '2xl': '1320px'
       },
     },
   },
