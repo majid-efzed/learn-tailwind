@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 
 <head>
     <meta charset="UTF-8">
@@ -84,50 +84,61 @@
 
     <!-- Start Navbar -->
     <section id="navbar">
-        <div class="w-full border border-green-700">
-            <nav class="flex justify-between items-center py-4 px-7 md:px-8 relative bg-red-700">
-                <a href="#home">
-                    <span class="font-kufi text-2xl md:text-4xl text-primary">عبد المجيد</span>
-                </a>
-                
-                <span id="toggle-menu" class="text-primary md:invisible">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="currentColor"
-                        viewBox="0 0 16 16">
-                        <path
-                            d="M1.5 0A1.5 1.5 0 0 0 0 1.5v2A1.5 1.5 0 0 0 1.5 5h13A1.5 1.5 0 0 0 16 3.5v-2A1.5 1.5 0 0 0 14.5 0h-13zm1 2h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1 0-1zm9.927.427A.25.25 0 0 1 12.604 2h.792a.25.25 0 0 1 .177.427l-.396.396a.25.25 0 0 1-.354 0l-.396-.396zM0 8a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V8zm1 3v2a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2H1zm14-1V8a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2h14zM2 8.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0 4a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5z" />
-                    </svg>
-                </span>
-
-                <ul id="menu" class="flex flex-col text-center justify-evenly items-stretch absolute -top-[500px] right-10 bg-white md:bg-transparent shadow-lg text-slate-400 text-sm md:text-lg font-bold rounded-md overflow-hidden md:overflow-visible transition-all duration-700 md:relative md:top-0 md:right-0 md:flex-row md:justify-center md:shadow-none md:rounded-none">
-                    <a href="#hero" class="hover:text-white">
-                        <li class="hover:bg-primary py-2 px-20 hover:py-4 md:px-4 md:hover:py-2 transition-all">Beranda</li>
-                    </a>
-                    <a href="#hero" class="hover:text-white">
-                        <li class="hover:bg-primary py-2 px-20 hover:py-4 md:px-4 md:hover:py-2 transition-all">Tentang Saya</li>
-                    </a>
-                    <a href="#hero" class="hover:text-white">
-                        <li class="hover:bg-primary py-2 px-20 hover:py-4 md:px-4 md:hover:py-2 transition-all">Portfolio</li>
-                    </a>
-                    <a href="#hero" class="hover:text-white">
-                        <li class="hover:bg-primary py-2 px-20 hover:py-4 md:px-4 md:hover:py-2 transition-all">Client</li>
-                    </a>
-                    <a href="#hero" class="hover:text-white">
-                        <li class="hover:bg-primary py-2 px-20 hover:py-4 md:px-4 md:hover:py-2 transition-all">Blog</li>
-                    </a>
-                    <a href="#hero" class="hover:text-white">
-                        <li class="hover:bg-primary py-2 px-20 hover:py-4 md:pr-1 md:pl-8 md:hover:py-2 transition-all md:hover:bg-transparent md:hover:text-slate-400">
-                            <span class="md:ring-2 ring-slate-400 md:rounded-full md:px-2 md:py-1 md:hover:text-white md:hover:ring-primary md:hover:ring-3 md:hover:shadow-lg md:hover:shadow-primary md:transition-all md:duration-300 md:hover:bg-primary">Contact</span>
-                        </li>
+        <header class="fixed w-full bg-white/75 backdrop-blur-md z-50">
+            <div class="container">
+                <nav class="flex justify-between items-center py-4 px-7 md:px-4 relative">
+                    <a href="#hero">
+                        <span class="font-kufi text-2xl md:text-4xl text-black">عبد المجيد</span>
                     </a>
                     
-                </ul>
-            </nav>
-        </div>
+                    <div class="relative cursor-pointer md:invisible">
+                        <span id="toggle-menu" class="text-primary transition-all duration-300 relative z-30">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="currentColor"
+                                viewBox="0 0 16 16">
+                                <path
+                                    d="M1.5 0A1.5 1.5 0 0 0 0 1.5v2A1.5 1.5 0 0 0 1.5 5h13A1.5 1.5 0 0 0 16 3.5v-2A1.5 1.5 0 0 0 14.5 0h-13zm1 2h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1 0-1zm9.927.427A.25.25 0 0 1 12.604 2h.792a.25.25 0 0 1 .177.427l-.396.396a.25.25 0 0 1-.354 0l-.396-.396zM0 8a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V8zm1 3v2a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2H1zm14-1V8a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2h14zM2 8.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0 4a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5z" />
+                            </svg>
+                        </span>
+                        <span class="text-sm text-reading absolute bottom-0 opacity-0 transition-all duration-300" id="navClose">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-x-circle-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293 5.354 4.646z" />
+                            </svg>
+                        </span>
+                    </div>
+
+                    <ul id="menu" class="flex flex-col justify-evenly items-stretch absolute z-50 -top-[500px] right-10 bg-white md:bg-transparent shadow-lg text-slate-400 text-sm md:text-lg font-bold rounded-md overflow-hidden md:overflow-visible transition-all duration-700 md:relative md:top-0 md:right-0 md:flex-row md:justify-center md:shadow-none md:rounded-none">
+                        <a href="#hero" class="hover:text-white">
+                            <li class="hover:bg-primary py-2 pl-10 pr-14 hover:py-4 md:px-4 md:hover:py-2 transition-all">Beranda</li>
+                        </a>
+                        <a href="#about" class="hover:text-white">
+                            <li class="hover:bg-primary py-2 pl-10 pr-14 hover:py-4 md:px-4 md:hover:py-2 transition-all">Tentang Saya</li>
+                        </a>
+                        <a href="#portfolio" class="hover:text-white">
+                            <li class="hover:bg-primary py-2 pl-10 pr-14 hover:py-4 md:px-4 md:hover:py-2 transition-all">Portfolio</li>
+                        </a>
+                        <a href="#client" class="hover:text-white">
+                            <li class="hover:bg-primary py-2 pl-10 pr-14 hover:py-4 md:px-4 md:hover:py-2 transition-all">Client</li>
+                        </a>
+                        <a href="#blog" class="hover:text-white">
+                            <li class="hover:bg-primary py-2 pl-10 pr-14 hover:py-4 md:px-4 md:hover:py-2 transition-all">Blog</li>
+                        </a>
+                        <a href="#contact" class="hover:text-white">
+                            <li class="hover:bg-primary py-2 pl-10 pr-14 hover:py-4 md:pr-1 md:pl-8 md:hover:py-2 transition-all md:hover:bg-transparent md:hover:text-slate-400">
+                                <span class="md:ring-2 ring-slate-400 md:rounded-full md:px-2 md:py-1 md:hover:text-white md:hover:ring-primary md:hover:ring-3 md:hover:shadow-lg md:hover:shadow-primary md:transition-all md:duration-300 md:hover:bg-primary">Contact</span>
+                            </li>
+                        </a>
+                        
+                    </ul>
+                </nav>
+            </div>
+        </header>
     </section>
     <!-- End Navbar -->
 
     <!-- Start Hero -->
-    <section id="hero" class="pt-20">
+    <section id="hero" class="pt-32 md:pt-52">
         <div class="container px-4 md:px-28">
             <div class="flex flex-wrap">
                 <div class="w-full self-center px-4 mb-10 md:w-2/3 borders">
@@ -156,9 +167,9 @@
     
     <!-- Start About -->
     <section id="about" class="pt-20">
-        <div class="container px-4 md:px-28">
+        <div class="container px-4">
             <div class="flex flex-wrap">
-                <div class="w-full self-center px-4 md:w-1/2 mb-10 md:mb-0">
+                <div class="w-full self-center px-4 md:w-1/2 mb-10 md:mb-0 md:pr-16">
                     <h1 class="uppercase text-primary text-lg font-bold mb-2">tentang saya</h1>
                     <h1 class="font-bold text-2xl mb-4 max-w-lg">Yuk, berkenalan dan membangun <span class="underline underline-offset-2 text-primary">bersama-sama.</span></h1>
                     <p class="text-base text-reading leading-relaxed">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur explicabo enim dignissimos blanditiis recusandae omnis. Quaerat delectus facere nisi qui?</p>
@@ -196,6 +207,60 @@
     </section>
     <!-- End About -->
 
+    <!-- Start Project -->
+    <section id="portfolio" class="bg-slate-50 mt-28">
+        <div class="container px-4">
+            <div class="max-w-lg text-center pt-20 mx-auto mb-16">
+                <h4 class="uppercase font-bold text-lg text-primary mb-2">portfolio</h4>
+                <h2 class="font-bold text-2xl mb-2">Project Saya</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero inventore aut totam at cupiditate eos in beatae omnis a optio?</p>
+            </div>
+
+            <div class="flex flex-wrap justify-center">
+                <div class="max-w-lg mb-6 p-4">
+                    <div class="mb-4 overflow-hidden rounded-lg shadow-md grayscale hover:grayscale-0 hover:scale-105 hover:ring-4 ring-primary transition-all duration-300 cursor-pointer">
+                        <img src="portfolio/landing-page.png" alt="landing-page">
+                    </div>
+                    <h4 class="font-bold text-lg mb-1 px-2">Project Landing Page</h4>
+                    <p class="px-2 text-reading">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga quas earum cumque?</p>
+                </div>
+
+                <div class="max-w-lg mb-6 p-4">
+                    <div class="mb-4 overflow-hidden rounded-lg shadow-md grayscale hover:grayscale-0 hover:scale-105 hover:ring-4 ring-primary transition-all duration-300 cursor-pointer">
+                        <img src="portfolio/landing-page.png" alt="landing-page">
+                    </div>
+                    <h4 class="font-bold text-lg mb-1 px-2">Project Landing Page</h4>
+                    <p class="px-2 text-reading">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga quas earum cumque?</p>
+                </div>
+                
+                <div class="max-w-lg mb-6 p-4">
+                    <div class="mb-4 overflow-hidden rounded-lg shadow-md grayscale hover:grayscale-0 hover:scale-105 hover:ring-4 ring-primary transition-all duration-300 cursor-pointer">
+                        <img src="portfolio/landing-page.png" alt="landing-page">
+                    </div>
+                    <h4 class="font-bold text-lg mb-1 px-2">Project Landing Page</h4>
+                    <p class="px-2 text-reading">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga quas earum cumque?</p>
+                </div>
+
+                <div class="max-w-lg mb-6 p-4">
+                    <div class="mb-4 overflow-hidden rounded-lg shadow-md grayscale hover:grayscale-0 hover:scale-105 hover:ring-4 ring-primary transition-all duration-300 cursor-pointer">
+                        <img src="portfolio/landing-page.png" alt="landing-page">
+                    </div>
+                    <h4 class="font-bold text-lg mb-1 px-2">Project Landing Page</h4>
+                    <p class="px-2 text-reading">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga quas earum cumque?</p>
+                </div>
+
+                <div class="max-w-lg mb-6 p-4">
+                    <div class="mb-4 overflow-hidden rounded-lg shadow-md grayscale hover:grayscale-0 hover:scale-105 hover:ring-4 ring-primary transition-all duration-300 cursor-pointer">
+                        <img src="portfolio/landing-page.png" alt="landing-page">
+                    </div>
+                    <h4 class="font-bold text-lg mb-1 px-2">Project Landing Page</h4>
+                    <p class="px-2 text-reading">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga quas earum cumque?</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Project -->
+
     <!-- end Portfolio -->
 
 
@@ -231,12 +296,28 @@
         // script untuk toggle menu di mobile
         const toggleMenu = document.querySelector('#toggle-menu');
         const menu = document.querySelector('#menu');
-        const body = document.querySelector('body')
+        const navClose = document.querySelector('#navClose');
 
         toggleMenu.addEventListener('click', function () {
-            menu.classList.toggle('top-14');
+            menu.classList.toggle('top-20');
+            toggleMenu.classList.toggle('opacity-0');
+            navClose.classList.toggle('opacity-0')
         });
 
+    </script>
+
+    <script>
+        // Script untuk fixed header
+        const header = document.querySelector('header');
+        const fixedHeader = header.offsetTop;
+
+        window.onscroll = function () {
+            if (window.pageYOffset > fixedHeader) {
+                header.classList.add('header-fixed');
+            } else {
+                header.classList.remove('header-fixed');
+            }
+        }
     </script>
 
 </body>
