@@ -13,7 +13,7 @@ module.exports = {
       },
       animation: {
         'goyang': 'goyang 1s ease-in-out infinite',
-        'fast-pulse': 'pulse .5s ease-in infinite'
+        'fast-pulse': 'pulse .5s ease-in infinite',
       },
       keyframes: {
         goyang: {
