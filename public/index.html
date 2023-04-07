@@ -54,7 +54,7 @@
             <!-- Fitur Toggle Dark Mode -->
             <div class="flex mx-auto font-sans text-sm font-medium justify-center items-center gap-2 md:justify-end">
                 <p class="dark:text-slate-100">light</p>
-                <input type="checkbox" id="toggle" class="hidden">
+                <input type="checkbox" id="toggle" class="">
                 <label for="toggle">
                     <div class="w-9 h-5 bg-slate-300 rounded-full p-0.5 flex items-center cursor-pointer">
                         <div class="w-4 h-4 bg-slate-100 rounded-full toggle-circle transition-all ease-in-out"></div>
@@ -140,6 +140,25 @@
     <!-- Start Hero -->
     <section id="hero" class="pt-32 md:pt-52">
         <div class="container px-4 md:px-28">
+
+            <input type="checkbox" id="darkMode" class="hidden">
+            <label for="darkMode" class="cursor-pointer inline-block relative">
+                <div class="h-8 w-14 mx-4 rounded-t-full relative overflow-hidden">
+                    <div class="sky h-16 w-16 bg-gradient-to-b from-sky-400 to-indigo-800 relative -translate-x-1/2 left-1/2 rounded-full transition-all duration-500 ease-out delay-150 overflow-hidden">
+                        <span class="absolute top-2 left-1 opacity-50">☁️</span>
+                        <span class="absolute top-1 right-2 opacity-50">☁️</span>
+                        <span class="absolute bottom-12 left-5 opacity-50">☁️</span>
+                        <span class="absolute bottom-3 left-1 opacity-50">✨</span>
+                        <span class="absolute bottom-1 right-1 opacity-50">✨</span>
+                    </div>
+
+                    <div class="moonson h-16 py-1 flex flex-col justify-between items-center z-10 absolute top-0 -translate-x-1/2 left-1/2 transition-all duration-500  ease-out">
+                        <span>☀️</span>
+                        <span class="rotate-180">🌙</span>
+                    </div>
+                </div>
+            </label>
+            
             <div class="flex flex-wrap">
                 <div class="w-full self-center px-4 mb-10 md:w-2/3 borders">
                     <h1 class="text-primary font-bold text-base md:text-xl">Halo! <span class="text-2xl animate-spin">👋</span>, perkenalkan saya <span class="block font-black text-slate-900 text-4xl mt-1 font-serif md:text-5xl">Majid Efzed</span></h1>
@@ -435,7 +454,7 @@
                         <h3 class="text-slate-300 text-xl font-bold mb-2">Tautan Halaman</h3>
                         <ul>
                             <li class="text-base text-slate-300 hover:text-primary transition-all duration-300">
-                                <a href="#home">Beranda</a>
+                                <a href="#hero">Beranda</a>
                             </li>
                             <li class="text-base text-slate-300 hover:text-primary transition-all duration-300">
                                 <a href="#about">Tentang Saya</a>
@@ -519,6 +538,13 @@
                 header.classList.remove('header-fixed');
             }
         }
+
+        // Script Darkmode
+        const darkMode = document.querySelector('#darkMode')
+
+        darkMode.addEventListener('click', function () {
+            darkMode.checked ? html.classList.add('dark') : html.classList.remove('dark');
+        });
     </script>
 
 </body>

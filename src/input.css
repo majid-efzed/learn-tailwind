@@ -19,6 +19,14 @@
         @apply top-0;
         box-shadow: inset 0 -1px 0 0 rgba(0,0,0,0.1);
     }
+
+    #darkMode:checked ~ label div .sky {
+        @apply rotate-180
+    }
+
+    #darkMode:checked ~ label div .moonson {
+        @apply rotate-180
+    }
 }
 
 @layer utilities {
